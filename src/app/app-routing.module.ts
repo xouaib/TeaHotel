@@ -9,9 +9,10 @@ import { OffersComponent } from './offers/offers.component';
 import { WiddingsComponent } from './widdings/widdings.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/accomodation', pathMatch: 'full' },
+  { path: '',  component: HomeComponent },
   { path: 'accomodation', component: AccomodationComponent },
   { path: 'celebrations', component: CelebrationsComponent },
   { path: 'food-and-beverage', component: FoodAndBeverageComponent },
